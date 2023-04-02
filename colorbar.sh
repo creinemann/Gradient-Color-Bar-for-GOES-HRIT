@@ -1,5 +1,9 @@
 #!/bin/bash
-
+if ! command -v convert &> /dev/null
+then
+    echo -e "convert could not be found, which is required for this script\n\nTry installing it with this command:\nsudo apt install imagemagick"
+    exit
+    
 convert -depth 8 -size 400x60 \
 -depth 8 -size 40x60 gradient:black-#b9b9b9 -gravity center -pointsize 10 -fill "#ffffff" -annotate -90x+2+0 "333K" \
 -depth 8 -size 40x60 gradient:#b9b9b9-#EAEAEA -gravity center -pointsize 10 -fill "#000000" -annotate -90x+2+0 "273K" \
