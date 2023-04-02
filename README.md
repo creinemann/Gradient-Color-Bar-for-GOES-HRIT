@@ -1,4 +1,4 @@
-# Gradient-Color-Bar-for-GOES-HRIT
+# Gradient-Color-Bar-for-GOES-HRIT Band 13
 Creating a color bar legend to match the gradients specified in goestools
 
 
